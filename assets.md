@@ -31,7 +31,7 @@ colors: {
 | Context | Background | Text / stroke | Notes |
 |---|---|---|---|
 | Page / hero | `#000000` | `off-white` | Pure black stage |
-| String canvas | `#000000` | `#444444` idle | 2px lines, 58% stage height |
+| String canvas | `#000000` | `#444444` idle | 2px lines, full stage height |
 | Buttons (Record, Play, Upload) | `#F5D547` | `off-black` | Rounded pill, ref player pill |
 | Button gap | — | — | `16px` (`gap-4`) |
 | Button active (recording) | — | — | 2px ring `off-black` |
@@ -57,7 +57,6 @@ Loaded via `next/font/google` in [layout.tsx](../app/layout.tsx).
 | Token | Value |
 |---|---|
 | `--hero-height` | `max(48vh, 300px)` |
-| `--string-height-ratio` | `0.58` (strings drawn at 58% of stage height, centered) |
 | `--space-page` | `1.5rem` / `2.5rem` (md+) |
 | `--button-gap` | `16px` |
 | `--z-canvas` | `0` |

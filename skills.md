@@ -123,7 +123,7 @@ Electronic bağlama pluck synth: saw + triangle, bandpass sweep, wave shaper, 60
 Ported from the reference HTML demo:
 
 - `initStrings(width, height)` — column count from `width / 36`, min 8 strings
-- Idle stroke `#444444`, 2px width, **58% stage height** centered; pluck glow transitions to red
+- Idle stroke `#444444`, 2px width, full stage height; pluck glow transitions to red
 - `pluckString(strings, index, force)` — middle-segment displacement
 - `updateStrings(ctx, strings)` — tension/damping simulation + draw; settles after 2.5s
 

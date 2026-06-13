@@ -14,8 +14,8 @@ Based on the approved screenshot: **branding on top, playable strings below** �
 │        Drag across the strings              │
 │                                             │
 ├─────────────────────────────────────────────┤
-│         │ │ │ │ │ │ │ │ │           z-0   │  ~52vh
-│  (strings — 58% height, centered)           │
+│  │ │ │ │ │ │ │ │ │ │ │ │ │ │ │ │     z-0   │  ~52vh
+│  (strings — full height, top border to bottom) │
 │                                             │
 │     [Record]  [Play]  [Upload]       z-30   │
 │                              ○ cursor z-50  │
@@ -50,7 +50,7 @@ Based on the approved screenshot: **branding on top, playable strings below** �
 
 - Full width of viewport
 - Strings span **top to bottom of string stage only** (not behind hero text)
-- Idle strings: 2px `#444444` vertical lines, **58% of stage height**, vertically centered
+- Idle strings: 2px `#444444` vertical lines, **full stage height** (top border to bottom of viewport)
 - Active pluck: red stroke glow (`#E63B2E` blend)
 - Record controls: bottom center, yellow pill buttons, **16px gap**, active ring `off-black`
 

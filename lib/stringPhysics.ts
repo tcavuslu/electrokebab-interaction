@@ -1,5 +1,4 @@
 export const STRING_IDLE_COLOR = "#444444";
-export const STRING_HEIGHT_RATIO = 0.58;
 export const STRING_SETTLE_SECONDS = 2.5;
 
 export type StringSegment = {
@@ -18,16 +17,14 @@ export type StringModel = {
   playTime: number;
 };
 
-function createStringSegments(canvasHeight: number): StringSegment[] {
+function createStringSegments(height: number): StringSegment[] {
   const segments: StringSegment[] = [];
   const segmentCount = 20;
-  const drawHeight = canvasHeight * STRING_HEIGHT_RATIO;
-  const yOffset = (canvasHeight - drawHeight) / 2;
-  const segmentHeight = drawHeight / segmentCount;
+  const segmentHeight = height / segmentCount;
 
   for (let i = 0; i <= segmentCount; i++) {
     segments.push({
-      y: yOffset + i * segmentHeight,
+      y: i * segmentHeight,
       offset: 0,
       velocity: 0,
     });
